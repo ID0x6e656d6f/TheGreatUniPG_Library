@@ -68,28 +68,3 @@ Quando possibile, saranno rese disponibili versioni digitalizzate dei libri di r
 ### 📌 Riassunti
 Saranno disponibili riassunti digitalizzati in vari formati (PDF, Word, scansioni di appunti scritti a mano).
 
-## ⚠ Rischi e Problematiche
-
-### 1️⃣ Qualità e Attendibilità
-❌ **Rischio:** Errori nei contenuti
-✅ **Soluzione:** Implementare un meccanismo di revisione collaborativa.
-
-### 2️⃣ Aspetti Legali e Diritti d'Autore
-❌ **Rischio:** Violazione del copyright per libri ed esami
-✅ **Soluzione:** Optare per link a risorse ufficiali e riassunti realizzati dagli studenti.
-
-### 3️⃣ Manutenzione e Aggiornamento
-❌ **Rischio:** Il progetto potrebbe diventare obsoleto
-✅ **Soluzione:** Creare una community attiva con contributi volontari.
-
-### 4️⃣ Accessibilità e Navigazione
-❌ **Rischio:** Difficoltà di ricerca dei materiali
-✅ **Soluzione:** Struttura chiara e, se possibile, un motore di ricerca.
-
-### 5️⃣ Documentazione dei Progetti
-❌ **Rischio:** Codice poco comprensibile
-✅ **Soluzione:** Incentivare la scrittura di README dettagliati.
-
-## 🔴 Conclusione
-Il progetto ha un grande potenziale, ma necessita di una gestione strutturata per evitare problemi di qualità, aggiornamento e legalità. 🚀
-
