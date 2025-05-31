@@ -49,7 +49,7 @@ Per ogni materia saranno presenti le seguenti sottocartelle:
 - **Mappe concettuali**
 - **Collegamenti esterni** o interni alle versioni digitalizzate dei libri consigliati
 - **Link a materiali aggiuntivi** per approfondimenti
-
+Ovviamente essendo che non tutti i materiali saranno reperibili da una sola persona si spera di contare su noi studenti per avere a disposizione più cose possibli!
 ## Specifiche Aggiuntive
 
 ### 📌 Esercizi e Soluzioni
