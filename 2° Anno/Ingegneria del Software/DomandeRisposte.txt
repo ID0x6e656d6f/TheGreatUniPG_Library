@@ -1,0 +1,443 @@
+1. Si descriva cos’è l’ingegneria del software e perché è importante nel contesto attuale.
+		È una disciplina ingegneristica che si occupa di tutti gli aspetta della produzione del software. Essa è importante perché oggigiorno il software  ha un ruolo fondamentale in quasi ogni aspetto della vita moderna. I costi del software dominano i costi informatici e andando avanti con i tempi e l'evolversi delle tecnologie essere in grado di analizzare correttamente il software diventa sempre più importante.
+
+2. Si illustrino le principali attività coinvolte nello sviluppo di un sistema software.
+	Le attività principali dello sviluppo software sono:
+	- Specifica del software -> attività attraverso la quale i clienti e ingegneri definiscono il software da produrre, vincoli e specifiche
+	- Sviluppo del software -> fase in cui il software viene progettato e programmato
+	- Convalida del software -> il software viene controllato per garantire la coerenza con ciò che è stato richiesto dal cliente
+	- Evoluzione del software -> il software viene modificato per riflettere le esigenze di clienti del mercato
+
+3. Si descrivano le differenze tra prodotti software generici e personalizzati.
+	Il software generico è un prodotto sviluppato per un ampio pubblico, molti utenti spesso con esigenze comuni. Un esempio possono essere i prodotti Microsoft 365. Ha un costo unitaro più basso rispetto ai software personalizzati. Aggiornamenti e migliorie sono uguali per tutti i clienti e sono gestite dal fornitore. Hanno poca flessbilità per questi motivi.
+	I software personalizzati sono software sviluppati su misura per un cliente o per un gruppo con esigenze simili. Ad esempio gestionali aziendali o CRM. Hanno un costo più alto per lo sviluppo e richiedono tanto tempo per analisi, progettazione e sviluppo. Gli aggiornamenti sono concordati con i clienti e per questo hanno un alta affidabilità.
+
+4. Si elenchino e spieghino brevemente gli attributi essenziali di un buon software.
+	Alcuni principi fondamentali del software sono:
+	- lo sviluppo del software deve essere fatto seguendo un processo di sviluppo gestito e compreso
+	- affidabilità e prestazioni sono fondamentali per tutti i tipi di software
+	- la comprensione e gestione delle specifiche software sono importanti
+	- il riutilizzo del software è utile ed una buona pratica
+
+5. Si discutano alcune delle sfide principali che l’ingegneria del software deve affrontare oggi.
+	- Gestione delle complessità -> i sistemi software moderni sono sempre più complessi e gestirli attraverso buone pratiche di progettazione è cruciale
+	- Evoluzione continua e manutenibilità -> il software è sempre soggetto ad una manutenzione correttiva, adattiva ed evolutiva. Il codice deve essere scritto considerando possibili cambiamenti futuri ed evoluzioni delle tecnologie
+	- Sicurezza del software -> i sistemi devono esssere il più sicuri possbili e con l'enorme evoluzione delle tecnologie anche offensive risutlta un lavoro sempre più impegnativo
+	- Integrazione con sistemi eterogenei -> i moderni sistemi software devono interfacciarsi con varie tecnologie come api, servizi legacy, IoT e cloud. Questo richiede una gestione di vari formati, protocolli e versioni diversi
+	- Distribuzione del Team -> essendo ormai lo sviluppo software globale è possibile che vi siano team e servizi sparsi per il mondo il che richiede di affrontare sfide di comunicazione e coordinamento
+	- Conformità alle norme -> con tutte le nuove norme come GDPR HIPAA PCI-DSS è difficile tenere il passo della continua evoluzione di queste normative
+
+6. Si descriva cosa si intende per processo software e quali sono le sue attività fondamentali.
+	Il processo software rappresenta un insieme strutturato di attività necessarie per lo sviluppo software.
+	I principali sono:
+	- Processi pianificati -> tutte le attività sono pianificate in anticipo
+	- Processi agili -> pianificazione incrementale, più facile da modificare
+	Queste attività sono:
+	- Specifica -> definizione di ciò che il sistema deve fare
+	- Progettazione ed implementazione -> definizione dell'organizzazione del sistema di implementazione del sistema
+	- Convalida -> verifica della coerenza del software
+	- Evoluzione -> modificare il sistema in base al cliente
+
+7. Si illustrino le principali differenze tra il modello a cascata e lo sviluppo incrementale.
+	- Il modello a cascata è un modello pianificato in cui ci sono fasi separate di specifica e sviluppo.
+	  Questo modello ha una scarsa adattabilità ai cambiamenti dopo che il processo è stato avviato, vista la sua suddivisione inflessibile.
+	- Nel modello di sviluppo incrementale specifica e convalida si alternano. Esso può essere sia agile che pianificato.
+	  Qui i costi si riducono, la quantità di documentazione è inferiore, si ottiene feedback dai clienti più facilmente tramite demo e la consegna al cliente è più veloce. Il processo però di per sè non è visibile vista la rapida mutabilità non è conveniente fare sempre documentazione per ogni versione. In aggiunta la struttura con l'aggiunta di nuovi aggiornamenti tende a degradarsi.
+
+8. Si spieghi in cosa consiste l’approccio basato sul riutilizzo del software e quali vantaggi comporta.
+	In questo approccio il software è integrato da componenti o sistemi applicativi esistenti chiamati COTS.
+	Questi elementi possono essere configurati per essere adattati al cliente.
+	Questa tecnica porta una riduzione di rischi e costi, la consegna e l'implementazione sono più rapidi.
+
+
+9. Si descriva il concetto di prototipazione del software.
+	In questa tecnica viene sviluppato un prototipo per verificare i requisiti e la fattibilità delle decisioni di progettazione.
+	Un prototipo rappresenta un versione iniziale del progetto per  dimostrare concetti e testare le opzioni di progettazione
+
+10. Si illustrino le strategie per affrontare i cambiamenti nei requisiti durante lo sviluppo del software.
+	Per affrontare il cambiamento dei requisiti si usano due strategie principali:
+	- Prototipazione -> dove viene sviluppato inizialmente un prototipo del software
+	- Consegna incrementale -> dove gli incrementi del sistema vengono consegnati al cliente per essere commentati e sperimentati.
+
+11. Si descriva la differenza tra requisiti funzionali e non funzionali.
+	- I requisiti funzionali indicano cosa il sistema deve fornire, come si deve comportare con certi input ed in certe situazioni. Indica anche come il sistema NON deve comportarsi.
+	- I requisiti non funzionali stabiliscono vincoli su servizi o funzioni, come vincoli di tempo o sul processo di sviluppo. Spesso si applicano a tutto il sistema nel suo complesso.
+
+12. Si illustri il processo di convalida dei requisiti.
+	Si tratta di mostrare che i requisiti definiscono il sistema che il cliente desidera realmente. Le tecniche usate sono:
+	- Revisione dei requisiti -> analisi manuale sistematica dei requisiti
+	- Prototipazione -> utilizzo di un modello eseguibile di sistema per verificare i requisiti
+	- Generazione di casi test -> sviluppo di test per i requisiti e per la stabilità
+
+13. Si spieghi cosa si intende per gestione dei requisiti.
+	La gestione dei requisiti controlla la gestione di questi in evoluzione durante il processo di ingegneria dei requisiti e lo sviluppo del sistema. Stabilisce il livello di dettaglio richiesto, ne tiene traccia e controlla quelli nuovi che nascono durante lo sviluppo.
+	Ciò che la gestione dei requisiti deve fare è:
+	- identificare i requisiti in modo univoco
+	- gestirne il cambiamento, valutando impatto e cost
+	- attuare politiche di tracciabilità e supporto
+
+14. Si descrivano i problemi tipici associati all’uso del linguaggio naturale nelle specifiche dei requisiti.
+	Nell'utilizzo del linguaggio naturale sorgono dei problemi:
+	- Poca chiarezza -> è difficile rendere il documento di facile lettura cercando di essere il più precisi possibile
+	- Confusione dei requisiti -> i requisiti funzionali e non funzionali tendono a confondersi
+	- Accorpamento dei requisiti -> diversi requisiti possono essere espressi insieme
+
+15. Si elenchino e spieghino brevemente i criteri con cui si verifica la qualità di un requisito.
+	- Validità -> il sistema fornisce le funzioni giuste
+	- Coerenza -> ci sono conflitti tra i requisiti
+	- Completezza -> sono incluse tutte le funzioni
+	- Realismo -> i requisiti sono implementati con i giusti budget
+	- Verificabilità -> i requisiti possono essere verificati
+
+16. Si descriva il ruolo della progettazione architetturale nello sviluppo di un sistema software-
+	Si occupa di capire come deve essere organizzato un sistema software  e di progettare la struttura complessiva di tale sistema.
+	Collega la progettazione e l'ingegneria dei requisiti, perché identifica i principali componenti strutturali di un insieme. 
+
+17. Si illustri il modello architetturale MVC.
+	Separa la presentazione e l'interazione dai dati del sistema. Il sistema è diviso in 3 componenti che interagiscono tra loro:
+	- Model -> gestisce i dati del sisteme e le loro operazioni
+	- View -> gestisce la GUI
+	- Controller -> gestisce l'interazione con l'utente e passa le interazioni alla View e al Model
+
+18. Si descrivano i principali stili architetturali.
+	- MVC -> separa la presentazione e l'interazione dai dati del sistema. Il sistema è strutturato in tre componenti logici che interagiscono tra loro. Il componente Model gestisce i dati del sistema e le operazioni associate. Il componente View la presentazione all'utente. Il Controller l'interazione con l'utente. Si usa quando esistono più modi per visualizzare ed interagire con i dati.
+	- Architettura a Strati -> Organizza il sistema in livelli di funzionalità correlate associate a ciascun livello . Un livello fornisce servizi al livello superiore per cui i livelli più bassi rappresentano servizi fondamentali. Si usa quando si costruisce su sistemi già esistenti, quando è richiesta sicurezza a più livelli oppure ci sono team distribuiti.
+	- Repository -> tutti i dati sono gestiti in un archivio centrale accessibile a tutti. I componenti interagiscno solo attraverso questo archivio. Si usa in sistemi con grandi volumi di dati.
+	- Client Server -> le funzionalità sono organizzate in servizi ciascusno dei quali viene erogato da un server separato. Si usa quando i dati in un db devono essere accessibili da diversi punti.
+	- Pipe and Filter -> l'elaborazione dei dati è organizzata in modo che ogni componente di elaborazione sia discreto ed esegua un tipo di trasformazione dei dati. I dati passano da un componente all'altro per essere elaborati. Si usa quando vi sono applicazioni di elaborazione dati in fasi separate
+
+19. Si spieghi l’importanza delle viste architetturali.
+	Le viste architetturali sono una prospettiva dell'architettura che isola certi aspetti del sistema per rendere la comprensione, la comunicazione e la progettazione più facili. Riduce la complessità mostrandone solamente una parte utile in uno specifico contesto.
+	Mostra la scomposizione in moduli, l'interazione tra i processi, e la distribuzione dei componenti su una rete.
+	Per progettazione e documentazione è necessario prsentare più viste architetturali del software
+0
+20. Si descriva come l’architettura influisce sulle caratteristiche non funzionali di un sistema.
+	Influisce su requisiti non funzionali come performance, scalabilità, sicurezza, manutenibilità, e affidabilità. L'architettura modulare o a microservizi facilita la manutenzione, i test di scalabilità. Una monolitica offre prestazioni migliore con minore flessbilità. L'uso di pattern architetturali permette di isolare guasti, garantire la sicurezza e favorire l'evoluzione del sistema. 
+
+21. Si descriva la differenza tra test di validazione e test dei difetti.
+	- il test di validazione ha come scopo di dimostrare allo sviluppatore e al cliente che il software soddisfa i requisiti e che funziona come previsto.
+	- il test dei difetti serve a scoprire anomalie o difetti del software il cui comportamento non è corretto o non conforme. Un test dei difetti riuscito stabilisce che il sistema è stato fatto funzionare in modo errato e si è quindi esposto un difetto.
+
+22. Si descriva il ruolo delle ispezioni.
+	Le ispezioni del software servono ad attuare un'analisi statica del sistema per scoprire possibili errori. Durante il test statico non ci si preoccupa delle interazioni tra i possibili errori, le versioni incomplete possono essere ispezionate senza costi aggiuntivi. Inoltre può anche considerare attributi più ampi come conformità, manutenibilità e portabilità.
+
+23. Si illustri il processo e i vantaggi dello sviluppo guidato dai test.
+	Inizialmente si identifica l'incremento richiesto e si scrive un test su questo per poi implementarlo come test automatico.
+	Inizialmente si esegue il test che dovrebbe fallire visto che non c'è ancora stata alcuna implementazione. A questo punto si implementa la funzionalità e si esegue il test.
+	Questo approccio porta a vantaggi quali un'ampia copertura del codice, al test di regressione, ad un debug semplificato e ad un'ampia documentazione del sistema. 
+
+24. Si descrivano le fasi principali del test di sviluppo.
+	- test di unità -> vengono testate le singole unità del programma o classi di oggetti. Questi devono concentrarsi sulla verifica della funzionalità degli oggetti o dei metodi
+	- test dei componenti -> diverse unità vengono integrate per creare componenti composti. Questo test si concentra sulla verifica delle interfacce dei componenti
+	- test di sistema -> alcuni o tutti i componenti di un sistema sono integrati e testati nel complesso. Questo test si concentra sulla verifica delle interazioni.
+
+25. Si descrivano i principali tipi di test utente.
+	- test alfa -> utenti del software collaborano con il team di sviluppo per testare il sistema 
+	- test beta -> release del software a disposizione degli utenti per sperimentare e segnalare possibili errori
+    - test di accettazione -> i clienti testano un sistema per decidere se è pronto o meno per essere accettato
+
+26. Si descriva cosa si intende per evoluzione del software.
+    L'evoluzione del software rappresenta il ciclo di vita di questo, in cui è in uso operativo e si evolve man mano che nuovi requisiti vengono prodotti. Vengono quindi attuate delle proposte di cambiamento. Dipende tutto dal tipo di software, dai processi di sviluppo e le competenze ed esperienze del personale.
+
+27. Si descrivano i principali problemi legati alla manutenzione dei sistemi legacy.    
+	La manutenzione di software legacy è una delle più grandi sfide dell'ingegneria del software
+	- il sistema usa teconologie non più supportate, senza aggiornamenti e con difficile possibilità di integrazione con nuovi sistemi moderni
+	- documentazione scarsa, incompleta, obsoleta o non esistente
+	- spesso hanno un codice monolitico, senza modularizzazione con effetti collaterali imprevisti
+	- raramente vi sono sistemi legacy con test unitari di integrazione o di regressione quindi vi possono essere numerosi bug interni
+	- pochi sviluppatori specializzati in linguaggi dei sistemi legacy
+	- scarsa scalabilità, visto che i sistemi legacy non sono pensati per ambienti distribuiti
+	- costi elevati di manutenzione visto che intervenire direttamente con questi sistemi richiede molto tempo e risorse
+
+28. Si spieghi la differenza tra manutenzione correttiva, adattativa ed evolutiva.
+	- la manutenzione correttiva ha lo scopo di risolvere bug e correggere carenze del modo in cui il software soddisfa i requisiti
+	- la manutenzione adattiva viene fatta per far si che il software sia utilizzabile in un sistema operativo/ambiente diverso rispetto alla sua implementazione iniziale
+	- la manutenzione evolutiva è fatta con lo scopo di modifcare il sistema per soddisfare nuovi requisiti
+
+29. Si descrivano le attività principali coinvolte nel processo di reingegnerizzazione.
+    - Traduzione del codice sorgente -> convertire il linguaggio in uno nuovo
+    - Ingegneria inversa -> analizzare il programma per capirlo
+    - Miglioramento della struttura del programma -> ristrutturazione per migliorare la comprensibilità
+    - Modularizzazione del programma -> riorganizzare la struttura del programma
+    - Reingegnerizzazione dei dati -> pulire e ristrutturare
+
+30. Si descriva il concetto di refactoring.
+    Processo di miglioramento di un programma per rallentare la degradazione attraverso il cambiamento. Una specie di manutenzione preventiva che riduce i problemi futuri. Non vengono aggiunte funzionalità ma viene migliorato il codice.
+
+31. Si descriva il ruolo del linguaggio UML nello sviluppo del software.
+    E' un linguaggio di modellazione visiva usato per rappresentare i diversi aspetti di un sistema software. Permette di descrivere requisiti, strutture dati, flussi e processi. E' anche un'ottimo modo per rendere la comunicazione tra clienti e analisti ancora più chiara.
+
+32. Si descriva cosa rappresenta un diagramma dei casi d’uso.
+    Descrive le aspettative di clienti e stakeholder, server per descrivere il sistema, gli attori e cosa possono fare. Viene utilizzato durante tutto il processo di analisi e progettazione per rispondere alle domande:
+	- cosa viene descritto
+	- chi interagisce con il sistema
+	- cosa possono fare gli attori.
+
+33. Si spieghi la differenza tra le relazioni include ed extend nei diagrammi dei casi d’uso.
+	In entrambi gli scenari un comportamento di un caso di uso viene integrato in un'altro, ma nel caso degli extend non avviene necessariamente. Nel primo caso quindi i casi d'uso sono dipendenti per esistere, nel caso dell'extended no.
+
+34. Si descrivano le caratteristiche principali di un attore in UML.
+	Gli attori sono indicati con un omino e sono coloro che interagiscono con il sistema in due modi:
+	- avviando l'esecuzione dei casi d'uso
+	- fornendo funzionalità necessarie
+	Essi rappresentano i ruoli che gli utenti adottano, non fanno parte del sistema.
+	I dati degli attori vengono gestiti all'interno del sistema. 
+	Esistono attori umani, non umani, primari, secondari, attivi, passivi.
+
+35. Si descrivano le buone pratiche e gli errori comuni da evitare nella modellazione dei casi d’uso.
+	Delle buone pratiche sono quelle di:
+	- identificare attori -> chiedendosi chi utilizza il sistema, di che supporto ha bisogno, chi è il responsabile, se ci sono o no dispostivi esterni e chi è interessato al risultato del sistema
+	- identificare i casi d'uso -> chiedendosi quali sono i principali compiti che un attore deve svolgere, se si deve interrogare o modificare informazioni nel sistema, se si vuole informare il sistema su cambiamenti esterni e se un attore deve essere o meno informato di eventi del sistema.
+	Degli errori comuni sono da evitare sono:
+	- mettere gli attori all'interno del sistema
+	- vedere i diagrammi dei casi d'suo come processi/flussi
+	- mancato raggruppamento di casi d'uso con obiettivi raggruppabili
+	- decomposizione funzionale
+
+36. Si descriva la differenza tra oggetto e classe nei diagrammi UML.
+	Una classe è un piano di costruzione per un insieme di oggetti simili di un sistema. Un oggetto è un'istanza delle classi con attributi diversi per ogni istanza  singola e operazioni uguali per tutti
+
+37. Si descriva la sintassi degli attributi in UML.
+	la sintassi è composta da:
+	- +, -, #, ~ per la visibilità dell'attributo
+	- / per un attributo derivato ovvero calcolato a partire da altro
+	- nome
+	- tipo -> può essere un'altra classe, un tipo primitivo o enumerazione
+	- molteplicità, di default 1
+	- valore di default
+	- proprietà, che può essere read only, unique, non unique, ordered, unordered
+
+38. Si spieghi cosa rappresenta un’associazione nei diagrammi di classe UML.
+	Rappresenta i modelli di possibili relazioni tra istanze di classi 
+
+39. Si descrivano le differenze tra aggregazione condivisa e composizione nei diagrammi UML.
+	Nell'aggregazione condivisa si una un rombo vuoto e sta ad indicare che vi è un'appartenenza debole tra le due classi, ovvero che entrambe le classi esistono indipendentemente. Vi può inoltre essere un'aggregazione con molteplicità >1 
+	Nella composizione vi è una dipendenza forte, quindi c'è una dipendenza tra l'oggetto composito e le sue parte. La molteplicità è unica e la sintassi è un rombo pieno.
+
+40. Si descriva il concetto di generalizzazione in UML.
+	A->B B eredita da a tutte le operazioni, attributi, associazioni e aggregazioni specificate.
+	Quindi A è la superclasse e B la sottoclasse. Ogni istanza di una sottoclasse è un'istanza indiretta della superclasse. Viene ereditato tutto tranne i dati privati.
+	Ogni sottoclasse può avere altre caratteristiche. 
+	Vi sono le generalizzazioni a classe astratta, ad ereditarietà multipla.
+
+41. Si descriva la struttura di uno stato in UML.
+	Si identifica con un rettangolo e il nome dello stato. Sempre dentro il rettangolo ma sotto il nome sono indicate le azione che vengono compiute nelle fasi dello stato. Ogni stato è un nodo della macchina a stati.
+
+42. Si descriva il significato di una transizione in un diagramma della macchina a stati UML.
+	La transizione rappresenta il passaggio della macchina a stati da uno stato ad un'altro.
+	Agli estremi ci sono i due stati collegati da una freccia direzionale. Sopra la freccia viene indicato l'evento trigger che innesca la transizione, la guardia che controlla se può avvenire la transizione ed infine le azione eseguite durante la transizione.
+
+43. Si spieghino le differenze tra uno stato iniziale, uno stato finale e un nodo di terminazione.
+	Uno stato iniziale ha 0 archi entranti e n archi uscenti >1. E' uno stato transitorio e tutte le guardie negli archi uscenti devono coprire tutte le possibili situazioni. Cerchio pieno
+	Uno stato finale invece è uno stato reale, segna la fine della sequenza di stati, non ha transizioni in uscita e ne possono esistere più di uno nel diagramma
+
+44. Si descriva il funzionamento di uno stato composito.
+	E' uno stato che contiene altri sottostati ed è sempre attivo.
+	Vi ci si entra tramite uno nodo iniziale. Una volta entrato nel sottostato questo passa alle transizioni interne finché non vi è un'uscita. L'uscita da un qualsiasi punto ne determina la fine anche per tutti gli altri sottostati
+
+45. Si spieghi cos’è uno stato history (superficiale e profondo).
+	Lo stato history server a ricordare quale è stato l'ultimo sottostato di uno stato composito attivo.
+	Lo attiva e tutte le attività d'ingresso vengono condotte in sequenza dall'esterno all'interno dello stato. Un arco uscente dall history punta ad un sottostato che viene usato se non viene eseguito l'ultimo stato.
+	Lo stato history superficiale ripristina lo stato che si trova allo stesso livello dello stato composito, quello profondo ripristina l'ultimo sottostato attivo attivo sull'intera profondità di annidamento.
+
+46. Si descriva la struttura di un diagramma di sequenza UML.
+	Il diagramma di sequenza è un diagramma bidimensionale dove nell'asse orizzontale vi stanno i partner di interazione e in quella verticale l'ordine cronologico d'interazione. L'interazione rappresenta una specifica della sequenza di eventi. In un diagramma di sequenza i partner sono rappresentati con delle linee di vit.
+
+47. Si descriva cosa rappresenta una linea di vita (lifeline) in un diagramma di sequenza.
+	La linea di vita rappresenta il corpo di un partner di interazione. Si prolunga per tutta la sua durata di vita.
+
+48. Si spieghino le differenze tra messaggi sincroni, asincroni e di risposta in un diagramma di sequenza.
+	- messaggi sincroni -> il mittente attende di aver ricevuto un messaggio di risposta prima di continuare con la sua linea di vita
+	- messaggi asincroni -> il mittente prosegue senza aspettare alcun messaggio di risposta
+	- messaggi di risposta -> nel caso sincrono contiene il valore di ritorno atteso
+
+49. Si descriva cosa sono i frammenti combinati in UML.
+	Servono a modellare le varie strutture di controllo e descrivono comportamenti condizionali o concorrenti tra i vari oggetti. Modellano il controllo del flusso all'interno delle interazioni attraverso comandi come if, else, loop, parallel, alt, opt ...
+
+50. Si descriva il significato e l’uso del frammento alt nei diagrammi di sequenza UML.
+	Il frammento alt modella sequenze alternative. Funziona come uno switch case. Utilizza delle guardie che servono per selezionare il percorso da seguire.
+
+51. Si descriva la funzione del token in un diagramma delle attività UML.
+	E' un meccanismo di coordinamento virtuale che descrive l'esecuzione. Una volta che un'azione riceve un token questa può essere eseguita. Un'azione completata passa il token all'azione successiva.
+	Ci sono toke di controllo e token di oggetto. I primi passano il permesso di esecuzione, i secondi anche dati di trasporto.
+
+52. Si descriva la differenza tra nodo finale dell’attività e nodo finale del flusso.
+	Il nodo finale di attività segna la fine di tutti i percorsi di esecuzione di un'attività mentre il nodo finale del flusso segna solo la fine di un percorso di esecuzione.
+
+53. Si descriva il funzionamento del nodo decisionale.
+	Definisce percorsi alternativi. Gli archi in uscita hanno delle guardie, con sintassi per stabilire su quale entrare. Le guardie devono essere mutuamente esclusive. Il token prende un ramo.
+
+54. Si descriva il significato delle partizioni in un diagramma delle attività UML.
+	Consente di raggruppare i nodi e gli archi di un'attività in base alle responsabilità, ovvero unità o ruoli organizzativi. Aiuta a rendere il diagramma più strutturato e non cambia nulla alla semantica di esecuzione.
+
+55. Si descriva il comportamento di una regione di attività interrompibile.
+		Definisce un gruppo di azioni la cui esecuzione deve essere terminata immediatamente se si verifica un qualsiasi errore. Una volta che una qualche attivata all'interno della regione entra in errore viene bloccata ed entra in un altro comportamento definito che gestisce la situazione di errore.
+
+56. Si descrivano i principi SOLID.
+	Sono principi per migliorare la qualità, complessità, modularità, manutenibilità e scalabilità del software e sono:
+	- S -> single responsibility, ogni classe è responsabile di un'unica funzionalità
+	- O -> open/closed principle, un'entità software è chiusa alla modifica ma aperta all'estensione
+	- L -> Liskov Substitution principle, le sottoclassi devono poter sostituire le loro classi base senza alterare il comportamento del programma
+	- I -> interface segregation, le interfacce devono essere specifiche e non generiche. Meglio tante interfacce specifiche che una generica
+	- D -> dependency inversion, i moduli di alto livello non devono dipendere da quelli più bassi.
+
+57. Si descriva il design pattern Factory Method.
+	Delega la creazione di oggetti a classi figlie. La sua struttura è:
+	- un product, che definisce l'interfaccia comune a tutti i prodotti creati dalla Factory
+	- il concrete product, che rappresenta l'implementazione Specifica
+	- il creator, che dichiara il Factory method e restituisce nuovi oggetti
+	- i concrete creators che sovrascrivono i factory method per restituire tipi specifici di prodotti
+	una volta che si è capito che i prodotti possono usare la stessa interfaccia si usa il factory method alla classe principale, si sostituiscono le istanze dirette con chiamate factory poi si creano sottoclassi per ogni tipo di prodotto.
+
+58. Si descriva il design pattern Abstract Factory.
+	Crea oggetti senza specificare le classi concrete. 
+	- si definisce la matrice di tipi di prodotti e varianti
+	- si dichiarano le interfacce astratte per i prodotti
+	- si dichiara l'abstract factory con metodi di creazione
+	- si implementa una factory concreta per ogni variante
+	- si crea la factory all'avvio
+	- si sostituiscono le istanze con chiamate ai metodi factory
+
+59. Si descriva il design pattern Prototype.
+	Consente di copiare oggetti esistenti senza render il codice dipendente dalle loro classi. Delega la clonazione agli oggetti stessi.
+	- si crea l'interfaccia Prototype
+	- si implementa il clone nelle classi concrete
+	- il metodo di clonazione può anche essere breve, come una chiamata al costruttore
+	- si può usare il prototype registry per gestire oggetti clonabili
+	- si sostituiscono  le chiamate dirette ai costruttori delle sottoclassi con richieste al registro.
+
+60. Si descriva il design pattern Singleton.
+	garantisce l'esistenza di un'unica istanza di una classe fornendo un punto di accesso globale
+	- dichiarare campo statico per la memorizzazione
+	- definire metodo pubblico per accedere all'istanza
+	- inizializzare l'istanza alla prima chiamata
+	- mantenere il costruttore privato
+
+61. Si descriva il pattern Adapter.
+	Consente la collaborazione tra oggetti con interfacce incompatibili. Avvolge un oggetto e lo converte.
+	- client -> contiene la logica di business
+	- interfaccia client -> definisce il protocollo di interazione
+	- service -> classe incompatibile
+	- adapter -> implementa l'interfaccia client e avvolge il service 
+	funzionamento:
+	- L'adapter implementa un'interfaccia compatibile con l'oggetto esistente
+	- l'oggetto chima i metodi dell'adapter
+	- avviene la conversione e l'inoltro dell'oggetto
+
+62. Si descriva il pattern Composite.
+	Permette di comporre oggetti in strutture ad albero e di trattarle come singoli oggetti.
+	- component -> descrive le operazioni comuni agli elementi semplici e complessi
+	- leaf -> elemento base dell'albero che non ha sotto elementi
+	- composite -> elemento che contiene sotto elementi, foglie o altri contenitori
+	- client -> lavora con tutti attraverso l'interfaccia comune
+	funzionamento:
+	- vi deve essere un modello ad albero
+	- di dichiara l'interfaccia comune
+	- si crea la classe foglia per elementi semplici
+	- si crea la classe container con array per i sotto elementi
+	- si creano i metodi per aggiungere o togliere gli elementi figli del contenitore.
+
+63. Si descriva il pattern Decorator.
+	Permette di aggiungere nuovi componenti  ad oggetti, inserendo questi dentro speciali oggetti wrapper.
+	- component -> interfaccia comune per wrapper e wrapped
+	- concrete component ->  classe di oggetti per wrapping, comportamento base modificabile dai decoratori
+	- base decorator -> classe con un campo per l'oggetto wrapped
+	- concrete decorators -> aggiungono comportamenti extra sovrascrivendo metodi del decoratore base
+	- client -> può usare più decoratori purchè funzioni con l'interfaccia del componente 
+	funzionamento
+	- verificare che vi sia un componente principale
+	- identificare metodo comune tra componente base e livelli aggiuntivi. Definire quindi un'interfaccia che li dichiari
+	- implementare una classe concreta che fornisce un comportamento di base
+	- definire classe decoratore astratto con riferimento ad un oggetto con forme all'interfaccia adel componente
+	- assicurarsi dell'implementazione
+	-creare decoratori concreti
+
+64. Si descriva il pattern Facade.
+	offre un'interfaccia semplificata ad una libreria, framework o classi
+	- facade -> fornisce un accesso semplificato alle funzionalità
+	- facade aggiuntivo -> per non sovraccaricare quello principale
+	- sottosistema complesso -> il sottosistema che è in diretto contatto con il facade
+	- client -> colui che usa il facade
+	funzionamento
+	- verifica se è possibile semplificare qualcosa
+	- dichiarare ed implementare l'interfaccia facade 
+	- fare interagire il client direttamente con il facade
+	- ipoteticamente suddividerlo
+
+65. Si descriva il pattern Flyweight.
+	ottimizza la ram condividendo punti comuni tra più oggetti evitandone la duplicazione
+	- classe flyweight -> contiene lo stato intrinseco condiviso tra più oggetti
+	- classe context -> gestisce lo stato estrinseco, specifico di ciascun oggetto originale 
+	- client -> calcola o memorizza lo stato estrinseco e interagisce con i flyweight
+	- flyweightfactory -> gestisce la creazione e il riutilizzo degli oggetti
+	funzionamento 
+	- separare stato intrinseco ed estrinseco
+	- assicurare l'immutabilità di quello intrinseco
+	- passare lo stato estrinseco ai metodi invece di memorizzarlo nell'oggetto
+	- creare una factory per per gestire la creazione di più flyweight
+	- spostare lo stato estrinseco in una classe contesto separata 
+
+66. Si descriva il pattern Proxy.
+	è un sostituto ad un altro oggetto. Controlla l'accesso all'oggetto originale.
+	- serverinterface -> definisce l'interfaccia comune. Il proxy deve rispettare questa interfaccia per essere scambiabile con il servizio originale
+	- service -> classe che implementa la logica principale
+	- proxy -> contiene un riferimento all'oggetto di servizio e può eseguire operazioni aggiuntive
+	- client -> interagisce con il servizio o il proxy tramite la stessa interfaccia	
+
+67. Si descriva il pattern Chain of Responsibility.
+	gestisce delle richieste attraverso una catena di oggetti.
+	- handler -> definisce un'interfaccia comune per tutti gli handler concerti e include un riferimento al successivo elemento della catena
+	- base handler -> fornisce l'implementazione standard del comportamento comune, compresa la logica per inoltrare la richiesta all'handler successivo
+	- concrete handler -> implementano la logica specifica per gestire le richieste o decidono se delegarle ulteriormente nella catena
+	- client -> configura la catena di handler, in mood statico o dinamico e inoltra le richieste
+	funzionamento:
+	- definire interfaccia per gli handler con un metodo per elaborare le richiesta
+	- creare classe base astratta che implementa l'interfaccia 
+	- implementare un comportamento predefinito nella classe base che inoltra le richieste all'handler successivo
+	- definire classi concrete degli handler che estendono la classe base ed implementano la logica di elaborazione successiva
+	- il client può comporre la catena manualmente o tramite factory
+	- si posso prevedere scenari dinamici
+
+68. Si descriva il pattern Iterator.
+	Attraversa elementi di una lista senza esporre la struttura
+	- iterator -> interfaccia che dichiara le operazioni necessarie per attraversare la collezione
+	- concereiterator -> implementano algoritmi specifici di traversata e mantengono lo stato interno consentendo iterazioni indipendenti sulla stessa collezione
+	- collection -> interfaccia che definisce un metodo per restituire un iteratore compatibile.
+	- concretecollection -> creano istanze specifiche degli iteratori quando richiesto
+	- client -> interagisce con le collezioni e gli iteratori tramite le relative interfacce
+	funzionamento:
+	- definire interfaccia iteratore con metodo per elementi e verifiche
+	- definire interfaccia per la collezione con ritorno oggetto iteratore
+	- implementare classi operatori concreti ognuna legata ad una collezione
+	- implementare collezioni concrete 
+	- sostituire il codice nel client con gli iteratori
+
+
+69. Si descriva il pattern Mediator.
+	riduce le dipendenza dirette tra oggetti. Usa una comunicazione centralizzata che coordina le interazioni.
+	- componenti -> contengono la logica applicativa e mantengono un riferimento ad un oggetto mediator senza dipendere dalla sua classe concreta.
+	- mediator -< dichiara i metodi per la comunicazione come ad esempio funzione di notifica che permette ai componenti di inviare messaggi senza comunicare tra loro
+	- concretemediator -> implementano la logica di coordinamento tra componenti gestendo le interazioni e ciclo di vita
+	- i componenti non hanno conoscenza reciproca
+	funzionamento 
+	- individuare classi con elevato numero di accoppiamento che potrebbe beneficiare di indipendenza
+	- definire l'interfaccia mediator che specifica il protocollo di comunicazione
+	- implementare la classe concretemediator con riferimenti ai componenti da coordinare
+	- affidare al mediator creazione e distruzione dei componenti
+	- ogni componente deve avere riferimento al mediator 
+	- fare si che i componenti comunichino solo con il mediator
+
+70. Si descriva il pattern Observer.
+	permette di notificare più oggetti al verificarsi di un evento nell'oggetto osservato
+	- publisher -> è responsabile dell'emissione degli eventi a seguito di cambiamenti di stato e azioni specifiche.
+	- quando si verifica un evento il publisher itera sull'elenco dei subscriber e invoca il loro metodo di verifica
+	- subscriber -> interfaccia che dichiara il metodo update per ricevere parametri relativi all'evento in corso
+	- concretesubscriber -> implementano l'interfaccia comune e definiscono la logica da eseguire in risposta alle notifiche, garantendo così il disaccoppiamento dalle classi specifiche del subscriber
+	- i client è responsabile della creazione degli oggetti publisher e subscriber, anche della loro registrazione dei subscriber presso i rispettivi publisher 
+	funzionamento
+	- analizzare logica di business e separare la responsabilità principale dell'oggetto osservato da quella degli osservatori
+	- definire interfaccia con metodo update
+	- definire interfaccia publisher- stabilire dove gestire la lista
+	- implementare  classi concrete
+	- definire metodi di notifica
+	- il cliente si occupa della creazione di oggetti
