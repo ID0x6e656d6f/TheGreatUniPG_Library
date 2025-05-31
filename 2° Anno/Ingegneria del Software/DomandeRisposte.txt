@@ -9,7 +9,8 @@
 	- Evoluzione del software -> il software viene modificato per riflettere le esigenze di clienti del mercato
 
 3. Si descrivano le differenze tra prodotti software generici e personalizzati.
-	//
+	Il software generico è un prodotto sviluppato per un ampio pubblico, molti utenti spesso con esigenze comuni. Un esempio possono essere i prodotti Microsoft 365. Ha un costo unitaro più basso rispetto ai software personalizzati. Aggiornamenti e migliorie sono uguali per tutti i clienti e sono gestite dal fornitore. Hanno poca flessbilità per questi motivi.
+	I software personalizzati sono software sviluppati su misura per un cliente o per un gruppo con esigenze simili. Ad esempio gestionali aziendali o CRM. Hanno un costo più alto per lo sviluppo e richiedono tanto tempo per analisi, progettazione e sviluppo. Gli aggiornamenti sono concordati con i clienti e per questo hanno un alta affidabilità.
 
 4. Si elenchino e spieghino brevemente gli attributi essenziali di un buon software.
 	Alcuni principi fondamentali del software sono:
@@ -19,7 +20,12 @@
 	- il riutilizzo del software è utile ed una buona pratica
 
 5. Si discutano alcune delle sfide principali che l’ingegneria del software deve affrontare oggi.
-	//
+	- Gestione delle complessità -> i sistemi software moderni sono sempre più complessi e gestirli attraverso buone pratiche di progettazione è cruciale
+	- Evoluzione continua e manutenibilità -> il software è sempre soggetto ad una manutenzione correttiva, adattiva ed evolutiva. Il codice deve essere scritto considerando possibili cambiamenti futuri ed evoluzioni delle tecnologie
+	- Sicurezza del software -> i sistemi devono esssere il più sicuri possbili e con l'enorme evoluzione delle tecnologie anche offensive risutlta un lavoro sempre più impegnativo
+	- Integrazione con sistemi eterogenei -> i moderni sistemi software devono interfacciarsi con varie tecnologie come api, servizi legacy, IoT e cloud. Questo richiede una gestione di vari formati, protocolli e versioni diversi
+	- Distribuzione del Team -> essendo ormai lo sviluppo software globale è possibile che vi siano team e servizi sparsi per il mondo il che richiede di affrontare sfide di comunicazione e coordinamento
+	- Conformità alle norme -> con tutte le nuove norme come GDPR HIPAA PCI-DSS è difficile tenere il passo della continua evoluzione di queste normative
 
 6. Si descriva cosa si intende per processo software e quali sono le sue attività fondamentali.
 	Il processo software rappresenta un insieme strutturato di attività necessarie per lo sviluppo software.
@@ -94,14 +100,19 @@
 	- Controller -> gestisce l'interazione con l'utente e passa le interazioni alla View e al Model
 
 18. Si descrivano i principali stili architetturali.
-	//
+	- MVC -> separa la presentazione e l'interazione dai dati del sistema. Il sistema è strutturato in tre componenti logici che interagiscono tra loro. Il componente Model gestisce i dati del sistema e le operazioni associate. Il componente View la presentazione all'utente. Il Controller l'interazione con l'utente. Si usa quando esistono più modi per visualizzare ed interagire con i dati.
+	- Architettura a Strati -> Organizza il sistema in livelli di funzionalità correlate associate a ciascun livello . Un livello fornisce servizi al livello superiore per cui i livelli più bassi rappresentano servizi fondamentali. Si usa quando si costruisce su sistemi già esistenti, quando è richiesta sicurezza a più livelli oppure ci sono team distribuiti.
+	- Repository -> tutti i dati sono gestiti in un archivio centrale accessibile a tutti. I componenti interagiscno solo attraverso questo archivio. Si usa in sistemi con grandi volumi di dati.
+	- Client Server -> le funzionalità sono organizzate in servizi ciascusno dei quali viene erogato da un server separato. Si usa quando i dati in un db devono essere accessibili da diversi punti.
+	- Pipe and Filter -> l'elaborazione dei dati è organizzata in modo che ogni componente di elaborazione sia discreto ed esegua un tipo di trasformazione dei dati. I dati passano da un componente all'altro per essere elaborati. Si usa quando vi sono applicazioni di elaborazione dati in fasi separate
 
 19. Si spieghi l’importanza delle viste architetturali.
 	Le viste architetturali sono una prospettiva dell'architettura che isola certi aspetti del sistema per rendere la comprensione, la comunicazione e la progettazione più facili. Riduce la complessità mostrandone solamente una parte utile in uno specifico contesto.
-	Mostra la scomposizione in moduli, l'interazione tra i processi, e la distribuzione dei componenti su una rete
-
+	Mostra la scomposizione in moduli, l'interazione tra i processi, e la distribuzione dei componenti su una rete.
+	Per progettazione e documentazione è necessario prsentare più viste architetturali del software
+0
 20. Si descriva come l’architettura influisce sulle caratteristiche non funzionali di un sistema.
-	//
+	Influisce su requisiti non funzionali come performance, scalabilità, sicurezza, manutenibilità, e affidabilità. L'architettura modulare o a microservizi facilita la manutenzione, i test di scalabilità. Una monolitica offre prestazioni migliore con minore flessbilità. L'uso di pattern architetturali permette di isolare guasti, garantire la sicurezza e favorire l'evoluzione del sistema. 
 
 21. Si descriva la differenza tra test di validazione e test dei difetti.
 	- il test di validazione ha come scopo di dimostrare allo sviluppatore e al cliente che il software soddisfa i requisiti e che funziona come previsto.
@@ -129,8 +140,19 @@
     L'evoluzione del software rappresenta il ciclo di vita di questo, in cui è in uso operativo e si evolve man mano che nuovi requisiti vengono prodotti. Vengono quindi attuate delle proposte di cambiamento. Dipende tutto dal tipo di software, dai processi di sviluppo e le competenze ed esperienze del personale.
 
 27. Si descrivano i principali problemi legati alla manutenzione dei sistemi legacy.    
+	La manutenzione di software legacy è una delle più grandi sfide dell'ingegneria del software
+	- il sistema usa teconologie non più supportate, senza aggiornamenti e con difficile possibilità di integrazione con nuovi sistemi moderni
+	- documentazione scarsa, incompleta, obsoleta o non esistente
+	- spesso hanno un codice monolitico, senza modularizzazione con effetti collaterali imprevisti
+	- raramente vi sono sistemi legacy con test unitari di integrazione o di regressione quindi vi possono essere numerosi bug interni
+	- pochi sviluppatori specializzati in linguaggi dei sistemi legacy
+	- scarsa scalabilità, visto che i sistemi legacy non sono pensati per ambienti distribuiti
+	- costi elevati di manutenzione visto che intervenire direttamente con questi sistemi richiede molto tempo e risorse
 
 28. Si spieghi la differenza tra manutenzione correttiva, adattativa ed evolutiva.
+	- la manutenzione correttiva ha lo scopo di risolvere bug e correggere carenze del modo in cui il software soddisfa i requisiti
+	- la manutenzione adattiva viene fatta per far si che il software sia utilizzabile in un sistema operativo/ambiente diverso rispetto alla sua implementazione iniziale
+	- la manutenzione evolutiva è fatta con lo scopo di modifcare il sistema per soddisfare nuovi requisiti
 
 29. Si descrivano le attività principali coinvolte nel processo di reingegnerizzazione.
     - Traduzione del codice sorgente -> convertire il linguaggio in uno nuovo
