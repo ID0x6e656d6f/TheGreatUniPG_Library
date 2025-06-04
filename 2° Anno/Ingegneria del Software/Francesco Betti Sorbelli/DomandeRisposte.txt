@@ -14,10 +14,10 @@
 
 4. Si elenchino e spieghino brevemente gli attributi essenziali di un buon software.
 	Alcuni principi fondamentali del software sono:
-	- lo sviluppo del software deve essere fatto seguendo un processo di sviluppo gestito e compreso
-	- affidabilità e prestazioni sono fondamentali per tutti i tipi di software
-	- la comprensione e gestione delle specifiche software sono importanti
-	- il riutilizzo del software è utile ed una buona pratica
+	- Manutenibilità -> il software deve essere scritto per potersi evolvere e soddisfare le mutevoli esigenze dei clienti.
+	- Affidabilità e Sicurezza -> affidabilità e sicurezza sono fondamentali per tutti i tipi di software. Un software affidabile è un software che crea pochi problemi a chi lo utilizza e che non ha falle di sicurezza.
+	- Efficienza -> il software non deve sprecare eccessive risorse di sistema e deve essere reattivo.
+	- Accettabilità -> il software deve essere acceettabile per il tipo di utenti per cui è stato prodotto.
 
 5. Si discutano alcune delle sfide principali che l’ingegneria del software deve affrontare oggi.
 	- Gestione delle complessità -> i sistemi software moderni sono sempre più complessi e gestirli attraverso buone pratiche di progettazione è cruciale
@@ -40,9 +40,9 @@
 
 7. Si illustrino le principali differenze tra il modello a cascata e lo sviluppo incrementale.
 	- Il modello a cascata è un modello pianificato in cui ci sono fasi separate di specifica e sviluppo.
-	  Questo modello ha una scarsa adattabilità ai cambiamenti dopo che il processo è stato avviato, vista la sua suddivisione inflessibile.
+	Questo modello ha una scarsa adattabilità ai cambiamenti dopo che il processo è stato avviato, vista la sua suddivisione inflessibile.
 	- Nel modello di sviluppo incrementale specifica e convalida si alternano. Esso può essere sia agile che pianificato.
-	  Qui i costi si riducono, la quantità di documentazione è inferiore, si ottiene feedback dai clienti più facilmente tramite demo e la consegna al cliente è più veloce. Il processo però di per sè non è visibile vista la rapida mutabilità non è conveniente fare sempre documentazione per ogni versione. In aggiunta la struttura con l'aggiunta di nuovi aggiornamenti tende a degradarsi.
+	Qui i costi si riducono, la quantità di documentazione è inferiore, si ottiene feedback dai clienti più facilmente tramite demo e la consegna al cliente è più veloce. Il processo però di per sè non è visibile vista la rapida mutabilità non è conveniente fare sempre documentazione per ogni versione. In aggiunta la struttura con l'aggiunta di nuovi aggiornamenti tende a degradarsi.
 
 8. Si spieghi in cosa consiste l’approccio basato sul riutilizzo del software e quali vantaggi comporta.
 	In questo approccio il software è integrato da componenti o sistemi applicativi esistenti chiamati COTS.
@@ -60,11 +60,17 @@
 	- Consegna incrementale -> dove gli incrementi del sistema vengono consegnati al cliente per essere commentati e sperimentati.
 
 11. Si descriva la differenza tra requisiti funzionali e non funzionali.
-	- I requisiti funzionali indicano cosa il sistema deve fornire, come si deve comportare con certi input ed in certe situazioni. Indica anche come il sistema NON deve comportarsi.
-	- I requisiti non funzionali stabiliscono vincoli su servizi o funzioni, come vincoli di tempo o sul processo di sviluppo. Spesso si applicano a tutto il sistema nel suo complesso.
+	- I requisiti funzionali indicano cosa il sistema deve fornire, come si deve comportare con certi input ed in certe situazioni. Descrivono dettagliatamente i servizi del sistema. Indicano anche come il sistema NON deve comportarsi. Dipendono dal software, dagli utenti e dal tipo di sistema padre. 
+	- I requisiti non funzionali stabiliscono vincoli su servizi o funzioni, come vincoli di tempo o sul processo di sviluppo. Spesso si applicano a tutto il sistema nel suo complesso. Possono anche essere imposizioni per un particolare IDE, linguaggio o metodo di sviluppo
 
 12. Si illustri il processo di convalida dei requisiti.
-	Si tratta di mostrare che i requisiti definiscono il sistema che il cliente desidera realmente. Le tecniche usate sono:
+	Si tratta di mostrare che i requisiti definiscono il sistema che il cliente desidera realmente. Questo processo verifica:
+	- Validità -> se è ciò che ha richiesto il cliente
+	- Coerenza -> se ci sono conflitti
+	- Completezza -> se è incluso tutto
+	- Realismo -> se sono attuabili
+	- Verificabilità -> se sono verificabili 
+	Le tecniche usate sono:
 	- Revisione dei requisiti -> analisi manuale sistematica dei requisiti
 	- Prototipazione -> utilizzo di un modello eseguibile di sistema per verificare i requisiti
 	- Generazione di casi test -> sviluppo di test per i requisiti e per la stabilità
@@ -73,8 +79,9 @@
 	La gestione dei requisiti controlla la gestione di questi in evoluzione durante il processo di ingegneria dei requisiti e lo sviluppo del sistema. Stabilisce il livello di dettaglio richiesto, ne tiene traccia e controlla quelli nuovi che nascono durante lo sviluppo.
 	Ciò che la gestione dei requisiti deve fare è:
 	- identificare i requisiti in modo univoco
-	- gestirne il cambiamento, valutando impatto e cost
-	- attuare politiche di tracciabilità e supporto
+	- gestirne il cambiamento, valutando impatto e costi
+	- attuare politiche di tracciabilità e supporto, per gestire le relazioni tra i requisiti
+	Si occupa anche di decidere se una modifica dei requisiti deve essere accettata o meno tramite l'analisi dei costi, dei problemi di applicazione e di implementazione.
 
 14. Si descrivano i problemi tipici associati all’uso del linguaggio naturale nelle specifiche dei requisiti.
 	Nell'utilizzo del linguaggio naturale sorgono dei problemi:
@@ -83,34 +90,37 @@
 	- Accorpamento dei requisiti -> diversi requisiti possono essere espressi insieme
 
 15. Si elenchino e spieghino brevemente i criteri con cui si verifica la qualità di un requisito.
-	- Validità -> il sistema fornisce le funzioni giuste
-	- Coerenza -> ci sono conflitti tra i requisiti
-	- Completezza -> sono incluse tutte le funzioni
-	- Realismo -> i requisiti sono implementati con i giusti budget
-	- Verificabilità -> i requisiti possono essere verificati
+	- Validità -> si controlla che il sistema fornisce le funzioni giuste e che rispondono meglio alle esigenze del cliente
+	- Coerenza -> verifica che non ci siano conflitti tra i requisiti
+	- Completezza -> verifica che siano incluse tutte le funzioni
+	- Realismo -> valuta se i requisiti sono implementati con i giusti budget
+	- Verificabilità -> stabilisce se i requisiti possono essere verificati
 
-16. Si descriva il ruolo della progettazione architetturale nello sviluppo di un sistema software-
+16. Si descriva il ruolo della progettazione architetturale nello sviluppo di un sistema software.
 	Si occupa di capire come deve essere organizzato un sistema software  e di progettare la struttura complessiva di tale sistema.
 	Collega la progettazione e l'ingegneria dei requisiti, perché identifica i principali componenti strutturali di un insieme. 
+	La progettazione architetturale da come risutltato un modello architetturale che descrive come il sistema è organizzato.
 
 17. Si illustri il modello architetturale MVC.
 	Separa la presentazione e l'interazione dai dati del sistema. Il sistema è diviso in 3 componenti che interagiscono tra loro:
-	- Model -> gestisce i dati del sisteme e le loro operazioni
-	- View -> gestisce la GUI
+	- Model -> gestisce i dati del sistema e le loro operazioni
+	- View -> gestisce la GUI e la presentazione dei dati all'utente
 	- Controller -> gestisce l'interazione con l'utente e passa le interazioni alla View e al Model
+	Si usa quando ci sono più modi per visualizzare ed interagire con i dati e quando non si conoscono i requisiti futuri.
+	Consente di modificare i dati indipendentemente dalla loro presentazione e viceversa, ma può comportare codice e complessità aggiuntivi.
 
 18. Si descrivano i principali stili architetturali.
 	- MVC -> separa la presentazione e l'interazione dai dati del sistema. Il sistema è strutturato in tre componenti logici che interagiscono tra loro. Il componente Model gestisce i dati del sistema e le operazioni associate. Il componente View la presentazione all'utente. Il Controller l'interazione con l'utente. Si usa quando esistono più modi per visualizzare ed interagire con i dati.
 	- Architettura a Strati -> Organizza il sistema in livelli di funzionalità correlate associate a ciascun livello . Un livello fornisce servizi al livello superiore per cui i livelli più bassi rappresentano servizi fondamentali. Si usa quando si costruisce su sistemi già esistenti, quando è richiesta sicurezza a più livelli oppure ci sono team distribuiti.
 	- Repository -> tutti i dati sono gestiti in un archivio centrale accessibile a tutti. I componenti interagiscno solo attraverso questo archivio. Si usa in sistemi con grandi volumi di dati.
-	- Client Server -> le funzionalità sono organizzate in servizi ciascusno dei quali viene erogato da un server separato. Si usa quando i dati in un db devono essere accessibili da diversi punti.
+	- Client Server -> le funzionalità sono organizzate in servizi ciascuno dei quali viene erogato da un server separato. Si usa quando i dati in un db devono essere accessibili da diversi punti.
 	- Pipe and Filter -> l'elaborazione dei dati è organizzata in modo che ogni componente di elaborazione sia discreto ed esegua un tipo di trasformazione dei dati. I dati passano da un componente all'altro per essere elaborati. Si usa quando vi sono applicazioni di elaborazione dati in fasi separate
 
 19. Si spieghi l’importanza delle viste architetturali.
 	Le viste architetturali sono una prospettiva dell'architettura che isola certi aspetti del sistema per rendere la comprensione, la comunicazione e la progettazione più facili. Riduce la complessità mostrandone solamente una parte utile in uno specifico contesto.
 	Mostra la scomposizione in moduli, l'interazione tra i processi, e la distribuzione dei componenti su una rete.
 	Per progettazione e documentazione è necessario prsentare più viste architetturali del software
-0
+
 20. Si descriva come l’architettura influisce sulle caratteristiche non funzionali di un sistema.
 	Influisce su requisiti non funzionali come performance, scalabilità, sicurezza, manutenibilità, e affidabilità. L'architettura modulare o a microservizi facilita la manutenzione, i test di scalabilità. Una monolitica offre prestazioni migliore con minore flessbilità. L'uso di pattern architetturali permette di isolare guasti, garantire la sicurezza e favorire l'evoluzione del sistema. 
 
@@ -168,7 +178,7 @@
     E' un linguaggio di modellazione visiva usato per rappresentare i diversi aspetti di un sistema software. Permette di descrivere requisiti, strutture dati, flussi e processi. E' anche un'ottimo modo per rendere la comunicazione tra clienti e analisti ancora più chiara.
 
 32. Si descriva cosa rappresenta un diagramma dei casi d’uso.
-    Descrive le aspettative di clienti e stakeholder, server per descrivere il sistema, gli attori e cosa possono fare. Viene utilizzato durante tutto il processo di analisi e progettazione per rispondere alle domande:
+    Descrive le aspettative di clienti e stakeholder, serve per descrivere il sistema, gli attori e cosa possono fare. Viene utilizzato durante tutto il processo di analisi e progettazione per rispondere alle domande:
 	- cosa viene descritto
 	- chi interagisce con il sistema
 	- cosa possono fare gli attori.
@@ -177,12 +187,18 @@
 	In entrambi gli scenari un comportamento di un caso di uso viene integrato in un'altro, ma nel caso degli extend non avviene necessariamente. Nel primo caso quindi i casi d'uso sono dipendenti per esistere, nel caso dell'extended no.
 
 34. Si descrivano le caratteristiche principali di un attore in UML.
-	Gli attori sono indicati con un omino e sono coloro che interagiscono con il sistema in due modi:
+	Gli attori sono indicati con un omino, un rettangolo o un server e sono coloro che interagiscono con il sistema in due modi:
 	- avviando l'esecuzione dei casi d'uso
 	- fornendo funzionalità necessarie
 	Essi rappresentano i ruoli che gli utenti adottano, non fanno parte del sistema.
 	I dati degli attori vengono gestiti all'interno del sistema. 
-	Esistono attori umani, non umani, primari, secondari, attivi, passivi.
+	Esistono attori:
+	- umani -> utilizzatori umani
+	- non umani -> server
+	- primari -> hanno il beneficio dell'esecuzione dei casi d'uso
+	- secondari -> non riceve alcun beneficio diretto
+	- attivi -> avvia l'esecuzione dei casi d'uso
+	- passivi -> fornisce funzionalità per l'esecuzione dei casi d'uso
 
 35. Si descrivano le buone pratiche e gli errori comuni da evitare nella modellazione dei casi d’uso.
 	Delle buone pratiche sono quelle di:
@@ -195,7 +211,7 @@
 	- decomposizione funzionale
 
 36. Si descriva la differenza tra oggetto e classe nei diagrammi UML.
-	Una classe è un piano di costruzione per un insieme di oggetti simili di un sistema. Un oggetto è un'istanza delle classi con attributi diversi per ogni istanza  singola e operazioni uguali per tutti
+	Una classe è un piano di costruzione per un insieme di oggetti simili di un sistema. Un oggetto è un'istanza delle classi con attributi diversi per ogni istanza singola e operazioni uguali per tutti
 
 37. Si descriva la sintassi degli attributi in UML.
 	la sintassi è composta da:
@@ -208,40 +224,43 @@
 	- proprietà, che può essere read only, unique, non unique, ordered, unordered
 
 38. Si spieghi cosa rappresenta un’associazione nei diagrammi di classe UML.
-	Rappresenta i modelli di possibili relazioni tra istanze di classi 
+	Rappresenta i modelli di possibili relazioni tra istanze di classi.
+	Le associazioni servono per indicare la navigabilità degli oggetti.
+	Se due oggetti sono navigabili allora entrambi si conoscono e possono accedere ai loro attributi e operazioni visibili. Se la navigabilità non è definita si presuppone navigabilità bidirezionale. 
 
 39. Si descrivano le differenze tra aggregazione condivisa e composizione nei diagrammi UML.
-	Nell'aggregazione condivisa si una un rombo vuoto e sta ad indicare che vi è un'appartenenza debole tra le due classi, ovvero che entrambe le classi esistono indipendentemente. Vi può inoltre essere un'aggregazione con molteplicità >1 
-	Nella composizione vi è una dipendenza forte, quindi c'è una dipendenza tra l'oggetto composito e le sue parte. La molteplicità è unica e la sintassi è un rombo pieno.
+	- Nell'aggregazione condivisa si una un rombo vuoto e sta ad indicare che vi è un'appartenenza debole tra le due classi, ovvero che entrambe le classi esistono indipendentemente. Vi può inoltre essere un'aggregazione con molteplicità >1 
+	- Nella composizione vi è una dipendenza forte, quindi c'è una dipendenza tra l'oggetto composito e le sue parte. La molteplicità è unica e la sintassi è un rombo pieno.
 
 40. Si descriva il concetto di generalizzazione in UML.
 	A->B B eredita da a tutte le operazioni, attributi, associazioni e aggregazioni specificate.
 	Quindi A è la superclasse e B la sottoclasse. Ogni istanza di una sottoclasse è un'istanza indiretta della superclasse. Viene ereditato tutto tranne i dati privati.
 	Ogni sottoclasse può avere altre caratteristiche. 
 	Vi sono le generalizzazioni a classe astratta, ad ereditarietà multipla.
+	La generalizzazione può avvenire con l'utilizzo di classe astratta, classi che non hanno istanze dirette ma solamente sottoclassi ad esse collegate.
 
 41. Si descriva la struttura di uno stato in UML.
-	Si identifica con un rettangolo e il nome dello stato. Sempre dentro il rettangolo ma sotto il nome sono indicate le azione che vengono compiute nelle fasi dello stato. Ogni stato è un nodo della macchina a stati.
+	Si identifica con un rettangolo e il nome dello stato. Sempre dentro il rettangolo ma sotto il nome sono indicate le azione che vengono compiute nelle fasi dello stato. Ogni stato è un nodo della macchina a stati. All'interno dello stato sono indicate le azione che vengon svolte quando la macchina a stati entra/sta/esce dallo stato.
 
 42. Si descriva il significato di una transizione in un diagramma della macchina a stati UML.
 	La transizione rappresenta il passaggio della macchina a stati da uno stato ad un'altro.
 	Agli estremi ci sono i due stati collegati da una freccia direzionale. Sopra la freccia viene indicato l'evento trigger che innesca la transizione, la guardia che controlla se può avvenire la transizione ed infine le azione eseguite durante la transizione.
 
 43. Si spieghino le differenze tra uno stato iniziale, uno stato finale e un nodo di terminazione.
-	Uno stato iniziale ha 0 archi entranti e n archi uscenti >1. E' uno stato transitorio e tutte le guardie negli archi uscenti devono coprire tutte le possibili situazioni. Cerchio pieno
-	Uno stato finale invece è uno stato reale, segna la fine della sequenza di stati, non ha transizioni in uscita e ne possono esistere più di uno nel diagramma
+	- Uno stato iniziale ha 0 archi entranti e n archi uscenti >1. E' uno stato transitorio e tutte le guardie negli archi uscenti devono coprire tutte le possibili situazioni. Cerchio pieno
+	- Uno stato finale invece è uno stato reale, segna la fine della sequenza di stati, non ha transizioni in uscita e ne possono esistere più di uno nel diagramma
+	- Il nodo di terminazione è uno pseudostato, indica che l'oggetto modellato cessa di esistere
 
 44. Si descriva il funzionamento di uno stato composito.
 	E' uno stato che contiene altri sottostati ed è sempre attivo.
 	Vi ci si entra tramite uno nodo iniziale. Una volta entrato nel sottostato questo passa alle transizioni interne finché non vi è un'uscita. L'uscita da un qualsiasi punto ne determina la fine anche per tutti gli altri sottostati
 
 45. Si spieghi cos’è uno stato history (superficiale e profondo).
-	Lo stato history server a ricordare quale è stato l'ultimo sottostato di uno stato composito attivo.
-	Lo attiva e tutte le attività d'ingresso vengono condotte in sequenza dall'esterno all'interno dello stato. Un arco uscente dall history punta ad un sottostato che viene usato se non viene eseguito l'ultimo stato.
+	Lo stato history server a ricordare quale è stato l'ultimo sottostato di uno stato composito attivo. Lo attiva e tutte le attività d'ingresso vengono condotte in sequenza dall'esterno all'interno dello stato. Un arco uscente dall history punta ad un sottostato che viene usato se non viene eseguito l'ultimo stato.
 	Lo stato history superficiale ripristina lo stato che si trova allo stesso livello dello stato composito, quello profondo ripristina l'ultimo sottostato attivo attivo sull'intera profondità di annidamento.
 
 46. Si descriva la struttura di un diagramma di sequenza UML.
-	Il diagramma di sequenza è un diagramma bidimensionale dove nell'asse orizzontale vi stanno i partner di interazione e in quella verticale l'ordine cronologico d'interazione. L'interazione rappresenta una specifica della sequenza di eventi. In un diagramma di sequenza i partner sono rappresentati con delle linee di vit.
+	Il diagramma di sequenza è un diagramma bidimensionale dove nell'asse orizzontale vi stanno i partner di interazione e in quella verticale l'ordine cronologico d'interazione. L'interazione rappresenta una specifica della sequenza di eventi. In un diagramma di sequenza i partner sono rappresentati con delle linee di vita.
 
 47. Si descriva cosa rappresenta una linea di vita (lifeline) in un diagramma di sequenza.
 	La linea di vita rappresenta il corpo di un partner di interazione. Si prolunga per tutta la sua durata di vita.
@@ -255,17 +274,19 @@
 	Servono a modellare le varie strutture di controllo e descrivono comportamenti condizionali o concorrenti tra i vari oggetti. Modellano il controllo del flusso all'interno delle interazioni attraverso comandi come if, else, loop, parallel, alt, opt ...
 
 50. Si descriva il significato e l’uso del frammento alt nei diagrammi di sequenza UML.
-	Il frammento alt modella sequenze alternative. Funziona come uno switch case. Utilizza delle guardie che servono per selezionare il percorso da seguire.
+	Il frammento alt serve per modellare sequenze alternative, con la stessa logica di uno switch. 
+	Vi sono delle guardie che verificano quale condizione si sta attuando. Queste devono essere disgiunte.
 
 51. Si descriva la funzione del token in un diagramma delle attività UML.
 	E' un meccanismo di coordinamento virtuale che descrive l'esecuzione. Una volta che un'azione riceve un token questa può essere eseguita. Un'azione completata passa il token all'azione successiva.
-	Ci sono toke di controllo e token di oggetto. I primi passano il permesso di esecuzione, i secondi anche dati di trasporto.
+	Ci sono token di controllo e token di oggetto. I primi passano il permesso di esecuzione, i secondi anche dati di trasporto.
 
 52. Si descriva la differenza tra nodo finale dell’attività e nodo finale del flusso.
-	Il nodo finale di attività segna la fine di tutti i percorsi di esecuzione di un'attività mentre il nodo finale del flusso segna solo la fine di un percorso di esecuzione.
+	- Il nodo finale di attività segna la fine di tutti i percorsi di esecuzione di un'attività compresi sottopercorsi concorrenti. Tutti i token vengono eliminati.
+	- Il nodo finale del flusso segna solo la fine di un percorso di esecuzione di un'attività lasciando inalterati tutti gli altri token.
 
 53. Si descriva il funzionamento del nodo decisionale.
-	Definisce percorsi alternativi. Gli archi in uscita hanno delle guardie, con sintassi per stabilire su quale entrare. Le guardie devono essere mutuamente esclusive. Il token prende un ramo.
+	E' un nodo che serve per far prendere persorsi alternativi al diagramma delle attività, in base a determinati fattori stabiliti nelle guardie. Nel nodo decisionale quando vi è il passaggio di un token questo viene passato nel ramo scelto.
 
 54. Si descriva il significato delle partizioni in un diagramma delle attività UML.
 	Consente di raggruppare i nodi e gli archi di un'attività in base alle responsabilità, ovvero unità o ruoli organizzativi. Aiuta a rendere il diagramma più strutturato e non cambia nulla alla semantica di esecuzione.
@@ -279,39 +300,50 @@
 	- O -> open/closed principle, un'entità software è chiusa alla modifica ma aperta all'estensione
 	- L -> Liskov Substitution principle, le sottoclassi devono poter sostituire le loro classi base senza alterare il comportamento del programma
 	- I -> interface segregation, le interfacce devono essere specifiche e non generiche. Meglio tante interfacce specifiche che una generica
-	- D -> dependency inversion, i moduli di alto livello non devono dipendere da quelli più bassi.
+	- D -> dependency inversion, i moduli di alto livello non devono dipendere da quelli più bassi ma tutti da astrazioni
 
 57. Si descriva il design pattern Factory Method.
-	Delega la creazione di oggetti a classi figlie. La sua struttura è:
-	- un product, che definisce l'interfaccia comune a tutti i prodotti creati dalla Factory
-	- il concrete product, che rappresenta l'implementazione Specifica
-	- il creator, che dichiara il Factory method e restituisce nuovi oggetti
-	- i concrete creators che sovrascrivono i factory method per restituire tipi specifici di prodotti
+	Sostituisce le istanze dirette degli oggetti con un factory dedicato, quindi gli oggetti vengono creati direttamente in un factory method.
+	- un Product, che definisce l'interfaccia comune a tutti i prodotti creati dalla Factory
+	- i Concrete Products, che rappresentano l'implementazione specifica dell'interfaccia 
+	- il Creator, che dichiara il Factory method e restituisce nuovi oggetti
+	- i Concrete Creators che sovrascrivono i factory method per restituire tipi specifici di prodotti
 	una volta che si è capito che i prodotti possono usare la stessa interfaccia si usa il factory method alla classe principale, si sostituiscono le istanze dirette con chiamate factory poi si creano sottoclassi per ogni tipo di prodotto.
+	Si applica quando non si sanno tipi esatti e le dipendenze con cui si interagirà, quando si deve consentire di estendere i componenti di una libreria o ottimizzare l'uso di risorse. Rispetta il principio S e O
 
 58. Si descriva il design pattern Abstract Factory.
-	Crea oggetti senza specificare le classi concrete. 
+	Permette di produrre famiglie di oggetti correlati senza specificarne le classi.
+	Dice di dichiarare eplicitamente interfacce per ogni prodotto di una certa famiglia. Si dichiara quindi un'interfaccia Abstract Factory con metodi di creazione per tutti i prodotti di una famiglia. Ogni variante ha la sua factory che implementa l'interfaccia.
+	- Prodotti Astratti -> dichiarano le interfacce per i prodotti correlati
+	- Prodotti Concreti -> implementazioni specifiche delle interfacce
+	- Abstract Factory -> dichiara metodi per le classi astratte
+	- Factory Concrete -> implementa l'Abstract Factory creando prodotti specifici.
+	Applicazione
 	- si definisce la matrice di tipi di prodotti e varianti
 	- si dichiarano le interfacce astratte per i prodotti
 	- si dichiara l'abstract factory con metodi di creazione
 	- si implementa una factory concreta per ogni variante
 	- si crea la factory all'avvio
 	- si sostituiscono le istanze con chiamate ai metodi factory
+	Si usa quando si devono gestire diverse famiglie di prodotti correlati senza dipendere dalle loro classi concrete permettendo l'estendibilità. Rispetta il principio S e O
 
 59. Si descriva il design pattern Prototype.
-	Consente di copiare oggetti esistenti senza render il codice dipendente dalle loro classi. Delega la clonazione agli oggetti stessi.
-	- si crea l'interfaccia Prototype
-	- si implementa il clone nelle classi concrete
+	Consente di copiare oggetti esistenti senza rendere il codice dipendente dalle loro classi. Delega la clonazione agli oggetti stessi.
+	- si crea l'interfaccia Prototype, la quale dichiara metodi di clonazione
+	- si implementa il clone nelle Concrete Prototype
 	- il metodo di clonazione può anche essere breve, come una chiamata al costruttore
 	- si può usare il prototype registry per gestire oggetti clonabili
-	- si sostituiscono  le chiamate dirette ai costruttori delle sottoclassi con richieste al registro.
+	- si sostituiscono le chiamate dirette ai costruttori delle sottoclassi con richieste al registro.
+	Si usa con codice che non deve dipendere dalle classi clonabili e quando si vuole ridurre il numero di sottoclassi.
 
 60. Si descriva il design pattern Singleton.
-	garantisce l'esistenza di un'unica istanza di una classe fornendo un punto di accesso globale
+	Garantisce l'esistenza di un'unica istanza di una classe fornendo un punto di accesso globale.
+	Il costruttore è reso privato e ne impendisce la creazione. 
 	- dichiarare campo statico per la memorizzazione
 	- definire metodo pubblico per accedere all'istanza
 	- inizializzare l'istanza alla prima chiamata
 	- mantenere il costruttore privato
+	Si usa quando una classe deve avere un'unica istanza.
 
 61. Si descriva il pattern Adapter.
 	Consente la collaborazione tra oggetti con interfacce incompatibili. Avvolge un oggetto e lo converte.
@@ -323,7 +355,8 @@
 	- L'adapter implementa un'interfaccia compatibile con l'oggetto esistente
 	- l'oggetto chima i metodi dell'adapter
 	- avviene la conversione e l'inoltro dell'oggetto
-
+	Rispetta S e O
+	
 62. Si descriva il pattern Composite.
 	Permette di comporre oggetti in strutture ad albero e di trattarle come singoli oggetti.
 	- component -> descrive le operazioni comuni agli elementi semplici e complessi
@@ -348,8 +381,7 @@
 	- verificare che vi sia un componente principale
 	- identificare metodo comune tra componente base e livelli aggiuntivi. Definire quindi un'interfaccia che li dichiari
 	- implementare una classe concreta che fornisce un comportamento di base
-	- definire classe decoratore astratto con riferimento ad un oggetto con forme all'interfaccia adel componente
-	- assicurarsi dell'implementazione
+	- definire classe decoratore astratto con riferimento ad un oggetto con forme all'interfaccia del componente
 	-creare decoratori concreti
 
 64. Si descriva il pattern Facade.
